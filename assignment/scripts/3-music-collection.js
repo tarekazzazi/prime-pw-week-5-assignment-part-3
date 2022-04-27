@@ -14,3 +14,12 @@ addToCollection('Positions','Ariana Grande',2020);
 addToCollection('Future Nostalgia','Dua Lipa',2020);
 addToCollection('Tickets To My Downfall','MGK',2020)
 addToCollection('Happier Than Ever','Billie Eilish',2021);
+
+console.log(collection[0]);
+console.log(collection[1]);
+console.log(collection[2]);
+console.log(collection[3]);
+console.log(collection[4]);
+console.log(collection[5]);
+
+console.log(collection);
