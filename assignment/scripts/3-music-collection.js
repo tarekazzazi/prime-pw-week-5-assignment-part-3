@@ -34,4 +34,23 @@ console.log(collection);
         }
         return true;
     }
-    showCollection(collection);
+showCollection(collection);
+
+    
+let results = [];
+    function findByArtist(artist) {
+        for (let i =0; i<collection.length && true;i++) {
+            if (artist === collection[i].artist) {
+                console.log(collection[i]);
+                results.push(collection[i]);
+                return false;
+            }else{
+                results.pop();
+                console.log('searching...');
+            }
+        }
+        }  
+
+
+findByArtist(  'Billie Eilish'  );
+
