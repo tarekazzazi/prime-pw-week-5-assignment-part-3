@@ -37,20 +37,20 @@ console.log(collection);
 showCollection(collection);
 
     
-let results = [];
+    let results = [];
     function findByArtist(artist) {
-        for (let i =0; i<collection.length && true;i++) {
-            if (artist === collection[i].artist) {
-                console.log(collection[i]);
-                results.push(collection[i]);
+        for (result of collection) {
+            if (artist === result.artist) {
+                results.push(result);
                 return false;
             }else{
                 results.pop();
                 console.log('searching...');
             }
         }
+        return results;
         }  
-
+        
 
 findByArtist(  'Billie Eilish'  );
 
