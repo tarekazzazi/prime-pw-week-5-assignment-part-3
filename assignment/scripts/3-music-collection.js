@@ -54,6 +54,12 @@ showCollection(collection);
 
 findByArtist(  'Billie Eilish'  );
 
+let searchResults = [];
   function search (artist,yearPublished) {
-            
+            for (album of collection)
+            if (album.artist === artist && album.yearPublished === yearPublished) {
+                searchResults.push(album);
+                return searchResults;
+            }
+            return collection;
         }
