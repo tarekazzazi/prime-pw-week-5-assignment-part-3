@@ -36,7 +36,7 @@ console.log(collection);
     }
 showCollection(collection);
 
-    
+
     let results = [];
     function findByArtist(artist) {
         for (result of collection) {
@@ -54,3 +54,6 @@ showCollection(collection);
 
 findByArtist(  'Billie Eilish'  );
 
+  function search (artist,yearPublished) {
+            
+        }
