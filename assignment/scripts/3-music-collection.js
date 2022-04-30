@@ -27,7 +27,7 @@ console.log(collection);
 
     function showCollection(array) {
         console.log('In showCollection');
-        console.log('There are:', collection.length,'albums in your collection');
+        console.log('There are:', array.length,'albums in your collection');
 
         for (let i=0; i<array.length; i++) {
             console.log(array[i].title,'by',array[i].artist,'published in',array[i].yearPublished);
@@ -63,3 +63,14 @@ let searchResults = [];
             }
             return collection;
         }
+
+let tracks =[];
+
+function addTrack(name,duration) {
+    let track = {
+        name: name,
+        duration: duration,
+    }
+        return tracks.push(track);    
+}
+

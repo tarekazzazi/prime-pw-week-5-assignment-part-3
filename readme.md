@@ -65,7 +65,7 @@ Update the `3-music-collection.js` file to do the following:
 ```
     TITLE by ARTIST, published in YEAR:
     1. NAME: DURATION
-    2. NAME: DURATION
+    2. NAME: DURATION 
     3. NAME: DURATION
     TITLE by ARTIST, published in YEAR:
     1. NAME: DURATION
