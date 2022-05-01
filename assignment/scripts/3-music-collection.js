@@ -75,7 +75,7 @@ let searchResults = [];
   
 function search (artist,yearPublished,trackName) {
             for (album of collection)
-            if (album.artist === artist && album.yearPublished === yearPublished && trackName.tracks === tracks) {
+            if (album.artist === artist && album.yearPublished === yearPublished && trackName === album.tracks) {
                 searchResults.push(album);
                 return searchResults;
             }
