@@ -91,19 +91,4 @@ const name = getNestedObject(newAlbum, ['tracks', 0,'name']); */
 
 
 
-        let me = {
-            firstName: 'Tarek',
-            lastName: 'Azzazi',
-            pronouns: 'He/Him',
-            favoriteColor: 'Gold',
-            numOfSiblings: 1,
-            FavMorningDrink: 'Mocha',
-
-            status: { 
-                sleeping: {  Eyes: 'closed', body: 'horizontal', Arms: 'Atside', legs: 'still',breathing: 'slowly' }, 
-
-                working: {Eyes: 'shifting', body: 'vertical', Arms: 'moving',legs:'tappingGround', breathing:'slightlyFaster'},
-                
-                cycling: { Eyes: 'dry and focused', body: 'tight', Arms:'stiff', Legs: 'soft/Hard' ,breathing: 'heavy'} 
-            }
-        }
+       
