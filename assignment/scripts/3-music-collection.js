@@ -1,4 +1,5 @@
 console.log('***** Music Collection *****')
+
 let collection = [];
    
 function addToCollection(title, artist, yearPublished, name, duration) {
@@ -53,6 +54,7 @@ console.log(collection);
 
 
     let results = [];
+
     function findByArtist(artist) {
         for (result of collection) {
             if (artist === result.artist) {
