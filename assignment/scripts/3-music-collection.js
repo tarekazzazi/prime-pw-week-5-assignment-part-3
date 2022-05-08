@@ -3,16 +3,16 @@ console.log('***** Music Collection *****')
 let collection = [];
 
 function addToCollection(title, artist, yearPublished, name, duration) {
-    
+
     let newAlbum = {
         title: title,
         artist: artist,
         yearPublished: yearPublished,
         tracks: { name: name, duration: duration }
     }
-    collection.push(newAlbum);
+    collection.push(newAlbum); //Adds a newAlbum to the collection array
 
-    return newAlbum;
+    return newAlbum; // returns new album
 }
 
 
@@ -60,8 +60,12 @@ function showCollection(array) {
 
 showCollection(collection);
 
+// results changed from global variable
 
 function findByArtist(artist) {
+
+    //to local variable 
+
     let results = [];
 
     for (newAlbum of collection) {
@@ -83,15 +87,23 @@ let searchResults = [];
 
 function search(artist, yearPublished, trackName) {
 
+    // searches for artist, yearPublished and trackname
+
     for (album of collection)
 
+        //searches for every album in the collection array
+
         if (album.artist === artist && album.yearPublished === yearPublished || trackName === album.tracks) {
-            
+
+            //Checks to see if the artist and album entered match with one of the albums in the collection   
+
             searchResults.push(album);
-            
+
+            // if artist and album do match then it adds the album to the searchResults Array
+
             return searchResults;
         }
-    return collection;
+    return collection; // if they don't match then the whole collection of albums is returned
 }
 /* Attempt at adding tracks
 
